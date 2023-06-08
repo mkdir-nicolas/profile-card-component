@@ -1,0 +1,86 @@
+@import url(./styles.css);
+.sr-only{
+    width: 0;
+    height: 0;
+    position: absolute;
+    overflow: hidden;
+}
+body{
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    background-color: var(--dark-cyan);
+    background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat;
+    background-position: right 52vw bottom 35vh, left 48vw top 52vh;
+}
+
+main{
+    border-radius: 16px;
+    overflow: hidden;
+    text-align: center;
+    background-color: white;
+    margin-inline: 1.3rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+div{
+    border-block-end: 1px solid  hsl(0, 0%, 90%);
+}
+section{
+    position: relative;
+}
+section img{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    outline: 4px solid white;
+}
+section h2{
+    font-size: 1.125rem;
+    font-weight: 700;
+    padding-block-start: 4.3rem;
+    color: var(--very-dark-desaturated-blue);
+}
+section h2 span{
+    padding-inline-start: 0.4rem;
+    font-weight: 300;
+    color: var(--dark-gray);
+}
+section p{
+    font-size: 0.9rem;
+    margin-block-start: 0.5rem;
+    margin-block-end: 1.5rem;
+    font-weight: 300;
+    color: var(--dark-gray);
+}
+
+li{
+    display: flex;
+    justify-content: space-evenly;
+    margin-inline: 1.rem;
+    margin-block: 1.4rem;
+    
+}
+li ul span{
+    display: block;
+    margin-block-end: 0.3rem;
+    font-size: 1.125rem;
+    font-weight: 700;
+    letter-spacing: 0;
+        
+    color:var(--very-dark-desaturated-blue);
+}
+li ul{
+    display: block;
+    font-size: 0.6rem;
+    letter-spacing: 0.1rem;
+    color: var(--dark-grayish-blue);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
